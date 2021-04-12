@@ -49,6 +49,8 @@ Table captions:
 | Name | Input<br>Binding | Output<br>Binding | Status |
 |------|:----------------:|:-----------------:|--------|
 | [Alibaba Cloud OSS]({{< ref alicloudoss.md >}})           |    | ✅ | Alpha |
+| [Alibaba Cloud nacos]({{< ref alicloud-nacos.md >}})           |  ✅ | ✅ | Alpha |
+| [Alibaba Cloud rocketmq]({{< ref alicloud-rocketmq.md >}})           |  ✅ | ✅ | Alpha |
 
 ### Amazon Web Services (AWS)
 
