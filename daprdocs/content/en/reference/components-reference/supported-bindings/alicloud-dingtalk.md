@@ -1,8 +1,8 @@
 ---
 type: docs
-title: "dingtalk binding spec"
-linkTitle: "dingtalk"
-description: "Detailed documentation on the dingtalk binding component"
+title: "Alibaba Cloud DingTalk binding spec"
+linkTitle: "Alibaba Cloud DingTalk"
+description: "Detailed documentation on the Alibaba Cloud DingTalk binding component"
 aliases:
 - "/operations/components/setup-bindings/supported-bindings/dingtalk/"
 ---
@@ -32,9 +32,9 @@ The above example uses secrets as plain strings. It is recommended to use a secr
 ## Spec metadata fields
 | Field              | Required | Binding support | Details | Example |
 |--------------------|:--------:|--------|--------|---------|
-| id                | Y        | Input/Output |webhook id | `"test_webhook_id"`
-| url                | Y        | Input/Output |webhook url | `"dingtalk.aliyun.com:8080/post/message"`
-| secret                | N        | Input/Output |the secret of webhook | `"LTAI4G8KxxxxxxxxxxxxxbwZLBr"`
+| id                | Y        | Input/Output |DingTalk's Webhook id | `"test_webhook_id"`
+| url                | Y        | Input/Output |DingTalk's Webhook url | `"dingtalk.aliyun.com:8080/post/message"`
+| secret                | N        | Input/Output |the secret of DingTalk's Webhook | `"LTAI4G8KxxxxxxxxxxxxxbwZLBr"`
 
 ## Binding support
 

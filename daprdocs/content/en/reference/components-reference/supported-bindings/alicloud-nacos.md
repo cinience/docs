@@ -1,8 +1,8 @@
 ---
 type: docs
-title: "nacos binding spec"
-linkTitle: "nacos"
-description: "Detailed documentation on the nacs binding component"
+title: "Alibaba Cloud Nacos binding spec"
+linkTitle: "Alibaba Cloud Nacos"
+description: "Detailed documentation on the Alibaba Cloud Nacos binding component"
 aliases:
 - "/operations/components/setup-bindings/supported-bindings/nacos/"
 ---
@@ -64,20 +64,20 @@ The above example uses secrets as plain strings. It is recommended to use a secr
 ## Spec metadata fields
 | Field              | Required | Binding support | Details | Example |
 |--------------------|:--------:|--------|--------|---------|
-| nameServer                | Y        | Input/Output |the name for get Nacos server | `"console1.nacos.io"`
-| endpoint                | Y        | Input/Output |the endpoint for get Nacos server addresses | `"acm.aliyun.com:8080"`
+| nameServer                | Y        | Input/Output |the name to get Nacos server | `"console1.nacos.io"`
+| endpoint                | Y        | Input/Output |the endpoint to get Nacos server addresses | `"acm.aliyun.com:8080"`
 | region                | Y        | Input/Output |the regionId for kms | `"cn-shanghai"`
 | namespace                | Y        | Input/Output |the namespaceId of Nacos | `"e525eafa-f7d7-4029-83d9-008937f9d468"`
 | config                | Y        | Output |A comma separated string of key | `"dataID:group"`
 | accessKey                | N        | Input/Output |the AccessKey for kms| `"LTAI4G8KxxxxxxxxxxxxxbwZLBr"`
 | secretKey                | N        | Input/Output |the SecretKey for kms | `"LTAI4G8KxxxxxxxxxxxxxbwZLBr"`
 | timeout                | N        | Input/Output |timeout for requesting Nacos server, default value is 10000 ms | `1000`
-| cacheDir                | N        | Input/Output |the directory for persist nacos service info,default value is current path | `"/tmp/nacos/cache"`
-| updateThreadNum                | N        | Input/Output |the number of gorutine for update nacos service info,default value is 20 | `20`
-| notLoadCacheAtStart                | N       | Input/Output |not to load persistent nacos service info in CacheDir at start time | `"false"`
+| cacheDir                | N        | Input/Output |the directory for persist Nacos service info,default value is current path | `"/tmp/nacos/cache"`
+| updateThreadNum                | N        | Input/Output |the number of gorutine for update Nacos service info,default value is 20 | `20`
+| notLoadCacheAtStart                | N       | Input/Output |not to load persistent Nacos service info in CacheDir at start time | `"false"`
 | updateCacheWhenEmpty                | N        | Input/Output |update cache when get empty service instance from server | `"false"`
-| username                | N        | Input/Output |the password for nacos auth | `"username"`
-| password                | N        | Input/Output |the password for nacos auth | `"password"`
+| username                | N        | Input/Output |the password for Nacos auth | `"username"`
+| password                | N        | Input/Output |the password for Nacos auth | `"password"`
 | logDir                | N        | Input/Output |the directory for log, default is current path | `"/tmp/nacos/log"`
 | rotateTime                | N        | Input/Output |the rotate time for log, eg: 30m, 1h, 24h, default is 24h| `"1h"`
 | maxAge                | N        | Input/Output |the max age of a log file, default value is 3 | `3`

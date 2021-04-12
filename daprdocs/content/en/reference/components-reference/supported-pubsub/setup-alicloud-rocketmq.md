@@ -1,8 +1,8 @@
 ---
 type: docs
-title: "RocketMQ"
-linkTitle: "RocketMQ"
-description: "Detailed documentation on the RocketMQ pubsub component"
+title: "Alibaba Cloud RocketMQ"
+linkTitle: "Alibaba Cloud RocketMQ"
+description: "Detailed documentation on the Alibaba Cloud RocketMQ pubsub component"
 aliases:
 - "/operations/components/setup-pubsub/supported-pubsub/setup-rocketmq/"
 ---
@@ -55,23 +55,23 @@ The above example uses secrets as plain strings. It is recommended to use a secr
 ## Spec metadata fields
 | Field              | Required | Details | Example |
 |--------------------|:--------:|--------|---------|
-| nameServer                | N        | rocketmq's name server, optional| `"http://mq-access.mq.aliyuncs.com"`
-| endpoint                | Y        | rocketmq's endpoint, optional, just for http proto | `"http://mqrest.cn.aliyuncs.com"`
-| accessProto                | Y        |sdk proto (http or tcp),default tcp| `"tcp"`
-| accessKey                | N        | rocketmq Credentials| `"LTAI4G8KxxxxxxxxxxxxxbwZLBr"`
-| secretKey                | N        | rocketmq Credentials | `"LTAI4G8KxxxxxxxxxxxxxbwZLBr"`
-| consumerGroup                | N        | consumer group for rocketmq's subscribers, suggested to provide | `"MQ-TCP"`
-| consumerBatchSize                | N        | consumer group for rocketmq's subscribers, suggested to provide, just for http proto | `1024`
-| consumerThreadNums                | N        |consumer group for rocketmq's subscribers, suggested to provide, just for cgo proto | `20`
-| instanceId                | N       | rocketmq's namespace, optional | `"MQ_INST_"`
-| nameServerDomain                | N        |rocketmq's name server domain, optional| `"mqrest.cn.aliyuncs.com"`
+| nameServer                | N        | RocketMQ's name server, optional| `"http://mq-access.mq.aliyuncs.com"`
+| endpoint                | Y        | RocketMQ's endpoint, optional, just for HTTP proto | `"http://mqrest.cn.aliyuncs.com"`
+| accessProto                | Y        |sdk proto (HTTP or TCP),default TCP| `"tcp"`
+| accessKey                | N        | RocketMQ Credentials| `"LTAI4G8KxxxxxxxxxxxxxbwZLBr"`
+| secretKey                | N        | RocketMQ Credentials | `"LTAI4G8KxxxxxxxxxxxxxbwZLBr"`
+| consumerGroup                | N        | consumer group for RocketMQ's subscribers, suggested to provide | `"MQ-TCP"`
+| consumerBatchSize                | N        | consumer group for RocketMQ's subscribers, suggested to provide, just for HTTP proto | `1024`
+| consumerThreadNums                | N        |consumer group for RocketMQ's subscribers, suggested to provide, just for cgo proto | `20`
+| instanceId                | N       | RocketMQ's namespace, optional | `"MQ_INST_"`
+| nameServerDomain                | N        |RocketMQ's name server domain, optional| `"mqrest.cn.aliyuncs.com"`
 | retries                | N        | retry times to connect rocketmq's broker, optional | `0`
-| topics                | Y        | topics to subscribe, use delimiter ',' to separate if more than one topics are configured, optional | `"TOPIC1,TOPIC_2"`
+| topics                | Y        | topics to subscribe, use delimiter ',' to separate if more than one topics are configured | `"TOPIC1,TOPIC_2"`
 | content-type                | N        | msg's content-type eg:"application/cloudevents+json; charset=utf-8", application/octet-stream | `"text/plain"`
 
-## Create an AliCloud Rocketmq
-Follow the instructions [here](https://www.alibabacloud.com/help/doc-detail/200153.htm?spm=a2c63.p38356.b99.177.45c3542eayXM1V) on setting up AliCloud Rocketmq
-Follow the instructions [here](https://help.aliyun.com/document_detail/200153.html?spm=a2c4g.11186623.6.737.24e97f90px1YRf) on setting up AliCloud Rocketmq
+## Create an AliCloud RocketMQ
+- Follow the instructions [here(en)](https://www.alibabacloud.com/help/doc-detail/200153.htm?spm=a2c63.p38356.b99.177.45c3542eayXM1V) on setting up AliCloud RocketMQ
+- Follow the instructions [here(zh-cn)](https://help.aliyun.com/document_detail/200153.html?spm=a2c4g.11186623.6.737.24e97f90px1YRf) on setting up AliCloud RocketMQ
 
 
 ## Per-call metadata fields

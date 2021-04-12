@@ -33,7 +33,7 @@ Table captions:
 ### Alibaba Cloud
 | Name                                              | Status | Component version | Since |
 |---------------------------------------------------|--------| ---- |---------------|
-| [Alibaba Cloud rocketmq]({{< ref setup-alicloud-rocketmq.md >}})           |  Alpha  | v1 | 1.0 |
+| [Alibaba Cloud RocketMQ]({{< ref setup-alicloud-rocketmq.md >}})           |  Alpha  | v1 | 1.0 |
 
 ### Amazon Web Services (AWS)
 

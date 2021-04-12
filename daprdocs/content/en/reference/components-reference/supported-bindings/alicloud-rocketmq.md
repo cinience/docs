@@ -1,8 +1,8 @@
 ---
 type: docs
-title: "rocketmq binding spec"
-linkTitle: "rocketmq"
-description: "Detailed documentation on the rocketmq binding component"
+title: "Alibaba Cloud RocketMQ binding spec"
+linkTitle: "Alibaba Cloud RocketMQ"
+description: "Detailed documentation on the Alibaba Cloud RocketMQ binding component"
 aliases:
 - "/operations/components/setup-bindings/supported-bindings/rocketmq/"
 ---
@@ -50,18 +50,18 @@ The above example uses secrets as plain strings. It is recommended to use a secr
 ## Spec metadata fields
 | Field              | Required | Binding support | Details | Example |
 |--------------------|:--------:|--------|--------|---------|
-| nameServer                | N        | Input/Output |rocketmq's name server, optional| `"http://mq-access.mq.aliyuncs.com"`
-| endpoint                | Y        | Input/Output |rocketmq's endpoint, optional, just for http proto | `"http://mqrest.cn.aliyuncs.com"`
-| accessProto                | Y        | Input/Output |sdk proto (http or tcp),default tcp| `"tcp"`
-| accessKey                | N        | Input/Output |rocketmq Credentials| `"LTAI4G8KxxxxxxxxxxxxxbwZLBr"`
-| secretKey                | N        | Input/Output |rocketmq Credentials | `"LTAI4G8KxxxxxxxxxxxxxbwZLBr"`
-| consumerGroup                | N        | Input |consumer group for rocketmq's subscribers, suggested to provide | `"MQ-TCP"`
-| consumerBatchSize                | N        | Input |consumer group for rocketmq's subscribers, suggested to provide, just for http proto | `1024`
-| consumerThreadNums                | N        | Input |consumer group for rocketmq's subscribers, suggested to provide, just for cgo proto | `20`
-| instanceId                | N       | Input/Output |rocketmq's namespace, optional | `"MQ_INST_"`
-| nameServerDomain                | N        | Input/Output |rocketmq's name server domain, optional| `"mqrest.cn.aliyuncs.com"`
-| retries                | N        | Input/Output |retry times to connect rocketmq's broker, optional | `0`
-| topics                | Y        | Input/Output | topics to subscribe, use delimiter ',' to separate if more than one topics are configured, optional | `"TOPIC1,TOPIC_2"`
+| nameServer                | N        | Input/Output |RocketMQ's name server, optional| `"http://mq-access.mq.aliyuncs.com"`
+| endpoint                | Y        | Input/Output |RocketMQ's endpoint, optional, just for HTTP proto | `"http://mqrest.cn.aliyuncs.com"`
+| accessProto                | Y        | Input/Output |sdk proto (HTTP or TCP),default TCP| `"tcp"`
+| accessKey                | N        | Input/Output |RocketMQ Credentials| `"LTAI4G8KxxxxxxxxxxxxxbwZLBr"`
+| secretKey                | N        | Input/Output |RocketMQ Credentials | `"LTAI4G8KxxxxxxxxxxxxxbwZLBr"`
+| consumerGroup                | N        | Input |consumer group for RocketMQ's subscribers, suggested to provide | `"MQ-TCP"`
+| consumerBatchSize                | N        | Input |consumer group for RocketMQ's subscribers, suggested to provide, just for http proto | `1024`
+| consumerThreadNums                | N        | Input |consumer group for RocketMQ's subscribers, suggested to provide, just for cgo proto | `20`
+| instanceId                | N       | Input/Output |RocketMQ's namespace, optional | `"MQ_INST_"`
+| nameServerDomain                | N        | Input/Output |RocketMQ's name server domain, optional| `"mqrest.cn.aliyuncs.com"`
+| retries                | N        | Input/Output |retry times to connect RocketMQ's broker, optional | `0`
+| topics                | Y        | Input/Output | topics to subscribe, use delimiter ',' to separate if more than one topics are configured | `"TOPIC1,TOPIC_2"`
 
 ## Binding support
 
@@ -70,9 +70,9 @@ This component supports both **input and output** binding interfaces.
 This component supports **output binding** with the following operations:
 - `create`
 
-## Create an AliCloud Rocketmq
-Follow the instructions [here](https://www.alibabacloud.com/help/doc-detail/200153.htm?spm=a2c63.p38356.b99.177.45c3542eayXM1V) on setting up AliCloud Rocketmq
-Follow the instructions [here](https://help.aliyun.com/document_detail/200153.html?spm=a2c4g.11186623.6.737.24e97f90px1YRf) on setting up AliCloud Rocketmq
+## Create an AliCloud RocketMQ
+- Follow the instructions [here(en)](https://www.alibabacloud.com/help/doc-detail/200153.htm?spm=a2c63.p38356.b99.177.45c3542eayXM1V) on setting up AliCloud RocketMQ
+- Follow the instructions [here(zh-cn)](https://help.aliyun.com/document_detail/200153.html?spm=a2c4g.11186623.6.737.24e97f90px1YRf) on setting up AliCloud RocketMQ
 
 ## Specifying a partition key
 
